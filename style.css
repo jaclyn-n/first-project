@@ -1,7 +1,10 @@
-* {
-    text-decoration: none;
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.heading {
-    font-size: larger;
+.nav-items {
+    
 }
