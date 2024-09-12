@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FroBites</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <nav>
-        <h4>FroBites</h4>
-  <div>
-    <a class="nav-items" href="#">About</a>
-    <a class="nav-items" href="#">Services</a>
-    <a class="nav-items" href="#">Menu</a>
-    <a class="nav-items" href="#">Gallery</a>
-    <a class="nav-items" href="#">Contact</a>
-    <button>Custom Order</button>
-  </div>
+      <h4 class="nav-logo">FroBites</h4>
+      <div>
+        <a class="nav-items" href="#">About</a>
+        <a class="nav-items" href="#">Combos</a>
+        <img id="image1"   src="./images/frobites.jpg" alt="forbites logo" style="width: 60px; height: auto;"/>
+        <a class="nav-items" href="#">Gallery</a>
+        <a class="nav-items" href="#">Contact</a>
+        <button>Custom Order</button>
+      </div>
     </nav>
-    <section id="hero"> 
-        <div class="hero-font overlay">
-            <h1>Frozen Food Services</h1>
-                <p id="subtext"> Why begin from scratch, when you can spped up the process</p></span>
-  </div>
+    <section id="hero">
+      <div class="hero-font overlay">
+        <h1>Frozen Food Services</h1>
+        <p class="subtext">
+          Begin from scratch? Naaa, -Skip the hustle
+        </p>
+      </div>
     </section>
-    <section>services is here</section>
-    <section>menu is here</section>
-    <section>gallery is here</section>
+
+    <!-- ------------------------Services Section------------- -->
+    <section id="services">
+      <div class="container">
+        <div class="services-part1">
+          <h2>Our Services</h2>
+          <p>Pre-curated packaged orders</p>
+        </div>
+
+        <div class="services-part2">
+          <div class="services-grid-item">
+            <div class="inner-item">
+              <i class="fa-solid fa-gift"></i>
+              <h3>Birthday</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="inner-item">
+              <i class="fa-solid fa-cookie-bite"></i>
+              <h3>Party service</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                ipsum.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="inner-item">
+              <i class="fa-solid fa-wine-bottle"></i>
+              <h3>catering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                asperiores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>video goes here
+    <section> 
+      <div>
+     <div class="box-video">
+      <video class="video" src="./images/frovideo.mp4" controls="controls" style="height: 100vh;"></video>
+     </div>
+    </div>
+  </section>
+    <section> </section>
     <footer>footer is here</footer>
- 
-</body>
+  </body>
 </html>

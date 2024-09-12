@@ -1,48 +1,167 @@
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:rgba(252, 253, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.nav-logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
 .nav-items {
-    text-decoration: none;
-    margin-right: 2rem;
-    color: black;
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #13140f;
+  font-size: 20px;
+  font-weight: 10px;
+ 
+
+}
+
+#image1 {
+    background-image: url(./images/frobites.jpg);
+    padding: 10px;
+    clip-path: polygon(100% 0, 100% 100%, 51% 78%, 0 100%, 0 0);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #hero {
-    background-image: url(./images/spring.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+  background-image: url(./images/spring.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-font {
-    color: #0a0a09;
-    font-size: 2rem;
+  color: #0a0a09;
+  font-size: 2rem;
 }
 
 .overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color:rgba(252, 253, 255, 0.5);
-    background-attachment: fixed;
-    width: 40%;
-    height: 100px;
-    padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(252, 253, 255, 0.5);
+  background-attachment: fixed;
+  width: 40%;
+  height: 100px;
+  padding: 4rem;
 }
 
-#subtext {
-    font-size: 2rem;
+.subtext {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.services-part2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 30px;
+  column-gap: 20px;
+}
+
+.services-grid-item {
+  padding: 0 5px 10 5px;
+}
+.inner-item {
+  border: 2px solid rgb(243, 235, 235);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.inner-item:hover {
+  background-color: #78b454;
+  color: white;
+  border-color: #78b454;
+}
+
+.inner-item i {
+  margin: 30px;
+}
+
+.inner-item h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.inner-item p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.image {
+    background-image: url(./images/samosas.jpg);
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+}       
+
+
+.process{
+
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 30px;
+    column-gap: 20px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .video{
+    border-radius: 5px;
+    width: 200px;
+  border: none;
+  background: #000;
+  color: #fff;
+  }
+
+  .box-video {
+    
+  }
