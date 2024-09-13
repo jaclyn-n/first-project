@@ -1,27 +1,34 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
-
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color:rgba(252, 253, 255, 0.5);
+  /* background-color: rgba(252, 253, 255, 0.5); */
+  background-color: rgb(246, 246, 247);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
   width: 100%;
+  height: 90px;
+ 
+}
+
+.nav-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
 }
 
 .nav-logo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }
 .nav-items {
   text-decoration: none;
@@ -29,14 +36,14 @@ nav {
   color: #13140f;
   font-size: 20px;
   font-weight: 10px;
- 
+  
 
 }
 
 #image1 {
-    background-image: url(./images/frobites.jpg);
-    padding: 10px;
-    clip-path: polygon(100% 0, 100% 100%, 51% 78%, 0 100%, 0 0);
+  background-image: url(./images/frobites.jpg);
+  padding: 10px;
+  clip-path: polygon(100% 0, 100% 100%, 51% 78%, 0 100%, 0 0);
 }
 .container {
   width: 80%;
@@ -72,10 +79,31 @@ nav {
 }
 
 .subtext {
-  font-size: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.services {
+  margin-bottom: 50px;
+  
+}
+
+#section {
+  background-color: #F6F6F7;  
+}
+
+.text-serivces {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-top: 150px;
+  
 }
 
 .services-part2 {
@@ -84,6 +112,7 @@ nav {
   gap: 5px;
   padding: 30px;
   column-gap: 20px;
+
 }
 
 .services-grid-item {
@@ -111,6 +140,7 @@ nav {
 
 .inner-item i {
   margin: 30px;
+  font-size: 3rem;
 }
 
 .inner-item h3 {
@@ -127,41 +157,55 @@ nav {
   line-height: 28px;
 }
 
-.image {
-    background-image: url(./images/samosas.jpg);
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-}       
-
-
-.process{
-
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 30px;
 }
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+.processes-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.process-header {
+  margin: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: rgb(0,0, 0,);
+
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.text-image {
+  /* margin: 30px; */
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+
+.video {
+    margin-top: 50px;
+    background-image: url("https://preview.colorlib.com/theme/flatter/img/zigzag.svg");
+    /* background-position: center; */
+    /* background-size: contain; */
+    background-color: #0a0a09;
     padding: 30px;
-    column-gap: 20px;
+    /* background-repeat: no-repeat; */
 }
-
-#gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    gap: 50px;
-  }
-
-  .video{
-    border-radius: 5px;
-    width: 200px;
-  border: none;
-  background: #000;
-  color: #fff;
-  }
-
-  .box-video {
-    
-  }
